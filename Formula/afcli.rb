@@ -5,21 +5,21 @@
 class Afcli < Formula
   desc "Agent-first CLI auditor for Claude skill descriptors."
   homepage "https://github.com/agentfirstcli/afcli"
-  version "0.1.0"
+  version "0.1.1-rc.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/agentfirstcli/afcli/releases/download/v0.1.0/afcli_0.1.0_darwin_amd64.tar.gz"
-      sha256 "056cbdd958e8ac0470fd54baed373a2684a3d6cf11220cc37dc9b698b7e81c38"
+      url "https://github.com/agentfirstcli/afcli/releases/download/v0.1.1-rc.1/afcli_0.1.1-rc.1_darwin_amd64.tar.gz"
+      sha256 "bb65f2a07d88cd440fc2aba33632a0b9d34f44097235bb1c70e4a6df9e9fff84"
 
       define_method(:install) do
         bin.install "afcli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/agentfirstcli/afcli/releases/download/v0.1.0/afcli_0.1.0_darwin_arm64.tar.gz"
-      sha256 "35b4e3cff0c936e06678ece198e276824f4f91fcbc7b266d8eca15558d76932d"
+      url "https://github.com/agentfirstcli/afcli/releases/download/v0.1.1-rc.1/afcli_0.1.1-rc.1_darwin_arm64.tar.gz"
+      sha256 "2f545512c82d67e9821da4cdc5e7da434f6f410493eb481b91ef1cd793642bfc"
 
       define_method(:install) do
         bin.install "afcli"
@@ -29,15 +29,15 @@ class Afcli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/agentfirstcli/afcli/releases/download/v0.1.0/afcli_0.1.0_linux_amd64.tar.gz"
-      sha256 "8b69b3ccfeac9452a117af9620242ff9471c111500b2b8aea20f5c1d5fa3852f"
+      url "https://github.com/agentfirstcli/afcli/releases/download/v0.1.1-rc.1/afcli_0.1.1-rc.1_linux_amd64.tar.gz"
+      sha256 "d48caf365515177ba48b33deb0fbbe0b5f5c3cb53cb2ff6142d0816d232481f9"
       define_method(:install) do
         bin.install "afcli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/agentfirstcli/afcli/releases/download/v0.1.0/afcli_0.1.0_linux_arm64.tar.gz"
-      sha256 "8fcb933e34f3881ff2aeb5f99f8c7ebb64153fef02b4f855ba5212a129ed42b1"
+      url "https://github.com/agentfirstcli/afcli/releases/download/v0.1.1-rc.1/afcli_0.1.1-rc.1_linux_arm64.tar.gz"
+      sha256 "a1c6e4a3c651757158d04dc6fea35ab04a89d78ab6204ee868ecd53f410e38cc"
       define_method(:install) do
         bin.install "afcli"
       end
